@@ -7,7 +7,7 @@ body {
    
    figure {
     text-align: center;
-    
+    font-size: 12px;
     margin: 0 auto; /*centers body*/
     margin-top: 10px;
     margin-bottom:10px;
