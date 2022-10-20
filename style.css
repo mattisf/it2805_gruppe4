@@ -140,22 +140,16 @@ body {
   }
    
    footer {
-    width: 100%;
-     padding: 20px;
-     margin-bottom: 100px;
-     height: 400%;
-      background-color: #b49d9d;
-   /* drawgirls.png */
+    width: 130%;
+    background-color: #B49D9D;
+    position: relative;
+    margin: 0% 0% 2% -15%;
+    text-align: center;
    }
 
-  .footerlogo{
-    background: url(images/drawgirls.png);
-    width:100px;
-    height:300px;
-    z-index:300;
-    bottom: 0px;
-    top: -108px;
-    right: -150px;
-    position: relative;
-  }
+   .footerpic {
+    width: 150px;
+
+   }
+  
 
