@@ -20,9 +20,68 @@ body {
    }
    
    h1, h2, h3 {
-     font-family: 'Courier New', monospace;
+     font-family: Georgia, serif;
+     
    }
   
+   .abouth1 {
+    font-weight: lighter;
+    text-align: center;
+    display:block;
+    margin-right: 10%;
+   }
+   
+   .aboutbox {
+     width: 100%;
+     padding: 20px;
+     margin: 5% 0% 0% 0%;
+     height: 400%;
+     background-color: white;
+     position: relative;
+   }
+
+   .aboutbar {
+    width: 100px;
+    height: 90%;
+    margin-bottom: 5%;
+    background-color: #faf1f0;
+    display: inline-block;
+    position:absolute;
+    float:left;
+    line-height: 2.2;
+    
+   }
+
+   .aboutbar a {
+     text-decoration: none;
+     color: black;
+     margin-top: 10%;
+     margin-left: 5%;
+
+     
+   }
+   a:hover{
+    font-size: 105%;
+  }
+
+
+   hr {
+     background-color: grey;
+     border: none;
+     height: 0.8px;
+   }
+
+   .productText {
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    height: 50%;
+    font-weight: lighter;
+    text-align: left;
+    margin: auto;
+    line-height: 1.7;
+   }
+
    
    ul {
      padding-left: 18px;
@@ -33,8 +92,7 @@ body {
       margin-bottom: 15px;
   }
   section>ul>li {
-    list-style-type:circle;
-    
+    list-style-type:circle;  
 }
   
   .title{
@@ -55,7 +113,7 @@ body {
     width: 22%;
     height: 50px;
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
   }
   .center-header{
     width: 50%;
