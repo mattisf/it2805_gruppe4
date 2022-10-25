@@ -151,5 +151,47 @@ body {
     width: 150px;
 
    }
-  
 
+/* ContactUs */
+
+#service {
+  margin: 34px;
+  display: flex;
+}
+
+#service .box {
+  padding: 45px;
+  margin: 3px 6px;
+  border-radius: 28px;
+}
+
+#service .box img {
+  margin-top: 20px;
+  height: 50px;
+  margin: auto;
+  display: block;
+  border-radius: 100px;
+}
+
+#service .box p {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#contBox .box2{
+  margin:auto;
+  width: 40%;
+ 
+}
+
+#contBox .box2 img {
+  margin-top: 20px;
+  height: 50px;
+  margin: auto;
+  display: block;
+  border-radius: 100px;
+}
+
+
+
+/* /ContactUs */
