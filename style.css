@@ -33,6 +33,7 @@ body {
    
    .aboutbox {
      width: 100%;
+     min-height: 40ch;
      padding: 20px;
      margin: 5% 0% 0% 0%;
      height: 400%;
@@ -47,7 +48,6 @@ body {
     background-color: #faf1f0;
     display: inline-block;
     position:absolute;
-  
     line-height: 2.2;
     
    }
@@ -132,8 +132,6 @@ body {
     color: grey;
     font-size: 1.3rem;
     transition: all 500ms;  
-
-  
   }
   .logo{
     max-width: 400px;
@@ -154,76 +152,35 @@ body {
 
 /* ContactUs */
 
-
-.iconBox{
+.cartContainer{
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.linkIcons img{
-  height: 30px;
-  margin: 0 20px 0 20px;
-}
-
-#contBorder p{
-  color: rgb(180, 177, 177);
-}
-
-
-.contInfo{
-  display: flex;
-  justify-content: center;
-}
-
-.contInfoLR{
-  padding: 20px;
-  width: 50%;
-  max-width: 350px;
-}
-
-.infoBox{
-  text-align: center;
-}
-.infoBox p{
-  text-align: left;
-}
-.infoBox button{
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 12px 30px;
-  font-size: 13px;
-  border: none;
-}
-.infoBox button:hover{
-  background-color: grey;
-}
-
-.infoBox img{
-  height: 30px;
-  margin: 20px 0 20px 0;
-  display: inline-block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /ContactUs */
+  flex-direction: row;
+  align-items: center;
+  border: 1px red solid;
+ }
+ .productImageCart{
+  margin: 2ch;
+ }
+ .productTitle{
+  padding-top: 5px;
+  line-height: 10px;
+  font-size: 32px;
+  font-family: ‘Open Sans’;
+  font-weight: 800;
+  color: red;
+ }
+ #productTitle{
+  padding-top: 5px;
+  line-height: 10px;
+  font-size: 32px;
+  font-family: ‘Open Sans’;
+  font-weight: 800;
+  color: red;
+ }
+ .productSubtitle{
+  line-height: 10px;
+  font-size: 18px;
+  font-family: ‘Open Sans’;
+  font-weight: 600;
+  color: #909090;
+ }
