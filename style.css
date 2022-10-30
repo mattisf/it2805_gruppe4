@@ -23,6 +23,12 @@ body {
      font-family: Georgia, serif;
      
    }
+   p {
+    text-decoration: none;
+    color: grey;
+    font-size: 1rem;
+    transition: all 500ms;  
+   }
   
    .abouth1 {
     font-weight: lighter;
@@ -161,26 +167,68 @@ body {
  .productImageCart{
   margin: 2ch;
  }
- .productTitle{
+ .productInformation{
+  margin: 5ch;
+  height: 18ch;
+  width: 30ch;
   padding-top: 5px;
-  line-height: 10px;
-  font-size: 32px;
-  font-family: ‘Open Sans’;
-  font-weight: 800;
-  color: red;
+  border: 1px red solid;
  }
- #productTitle{
-  padding-top: 5px;
-  line-height: 10px;
-  font-size: 32px;
-  font-family: ‘Open Sans’;
-  font-weight: 800;
-  color: red;
+ .adjustProductContainer{
+  margin-left: 20ch;
+  padding: 2ch;
+  height: 20ch;
+  width: 30ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px red solid;
+
  }
- .productSubtitle{
-  line-height: 10px;
-  font-size: 18px;
-  font-family: ‘Open Sans’;
-  font-weight: 600;
-  color: #909090;
+ .itemsAmount{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1ch;
+
+  width: 16ch;
+  border: 1px red solid;
+  justify-content: space-between;
  }
+
+ .plusminusBtn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: ‘Open Sans’;
+  font-weight: 900;
+  color: #202020;
+  cursor: pointer;
+ }
+
+.checkout{
+  display: flex;
+  flex-direction: column;
+  height: 18ch;
+margin: 4ch;
+  border: 1px red solid;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sum{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10ch;
+}
+
+
