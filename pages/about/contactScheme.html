@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">  
   <title>Contact Scheme</title>
+  <script src="contactScheme.js" defer></script>   
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -40,7 +41,7 @@
 
     <div id="fcf-form">
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="#">
         
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Your name</label>
@@ -64,14 +65,9 @@
         </div>
 
         <div class="fcf-form-group">
-<!--             <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
- -->            <input type="submit" value="Send message" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">
+            <button onclick="sendMessage()" type="button" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" >Send Message</button>
         </div>
-       
 
-       
-
-      
     </div>
     </div>
     </section>
@@ -87,7 +83,6 @@
     <img class="footerpic" src="/images/drawgirls.png">
   </footer>
 
-      
   
 
   
