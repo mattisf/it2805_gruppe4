@@ -23,6 +23,12 @@ body {
      font-family: Georgia, serif;
      
    }
+   p {
+    text-decoration: none;
+    color: grey;
+    font-size: 1rem;
+    transition: all 500ms;  
+   }
   
    .abouth1 {
     font-weight: lighter;
@@ -33,6 +39,7 @@ body {
    
    .aboutbox {
      width: 100%;
+     min-height: 40ch;
      padding: 20px;
      margin: 5% 0% 0% 0%;
      height: 400%;
@@ -47,7 +54,6 @@ body {
     background-color: #faf1f0;
     display: inline-block;
     position:absolute;
-  
     line-height: 2.2;
     
    }
@@ -132,8 +138,6 @@ body {
     color: grey;
     font-size: 1.3rem;
     transition: all 500ms;  
-
-  
   }
   .logo{
     max-width: 400px;
@@ -153,61 +157,103 @@ body {
    }
 
 /* ContactUs */
-
-.iconBox{
+div.shoppingcartHeader{
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 60px;
-  margin-left: 100px;
-}
+  margin: 3ch;
+  font-size: x-large;
+  color: grey;
 
-.borderBox{
+}
+.cartContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:#faf1f0;
+  margin: 2ch;
+ }
+ .productImageCart{
+  margin: 2ch;
+ }
+ .productInformation{
+  margin: 5ch;
+  height: 18ch;
+  width: 30ch;
+  padding-top: 5px;
+ }
+ .adjustProductContainer{
+  margin-left: 20ch;
+  padding: 2ch;
+  height: 20ch;
+  width: 30ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+
+ }
+ .itemsAmount{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1ch;
+
+  width: 16ch;
+  justify-content: space-between;
+ }
+
+ .plusminusBtn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 100px;
-}
+  align-items: center;
+  font-size: 20px;
+  font-family: ‘Open Sans’;
+  font-weight: 900;
+  color: #202020;
+  cursor: pointer;
+ }
 
-.linkIcons img{
-  height: 30px;
-  margin: 0 20px 0 20px;
-}
-
-#contBorder p{
-  color: rgb(180, 177, 177);
-}
-
-
-.contInfo{
+.checkout{
   display: flex;
-  justify-content: center;
-  margin-left: 120px;
-  margin-bottom: 30px;
+  flex-direction: column;
+  min-height: 18ch;
+  margin: 5ch;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.contInfoLR{
-  padding: 20px;
-  width: 50%;
-  max-width: 350px;
+.sum{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10ch;
 }
 
-.infoBox{
-  text-align: center;
+hr.calculation{
+  border: 0.1px grey solid;
+  width: 102ch
 }
-.infoBox p{
-  text-align: left;
+button.checkoutBtn{
+  border: #B49D9D solid 2.5px;
+  border-radius: 3ch;
+  width: 40ch;
+  height: 8ch;
+  background-color: white;
 }
-.infoBox button{
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 12px 30px;
-  font-size: 13px;
-  border: none;
-}
-.infoBox button:hover{
-  background-color: grey;
+.checkoutBtnContainer{
+  width: 100ch;
+  height: 6ch;
+  display: flex;
+  justify-content:flex-end;
+  align-items: baseline;
+  margin-top: 4ch;
 }
 
 .infoBox img{
@@ -216,7 +262,8 @@ body {
   display: inline-block;
 }
 
-/* /ContactUs */
+
+
 
 /* ContactScheme */
 
@@ -366,3 +413,69 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 /* /ContactScheme */
+
+/* /ContactUs */
+
+
+.iconBox{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.borderBox{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.linkIcons img{
+  height: 30px;
+  margin: 0 20px 0 20px;
+}
+
+#contBorder p{
+  color: rgb(180, 177, 177);
+}
+
+.contInfo{
+  display: flex;
+  justify-content: center;
+  margin-left: 120px;
+  margin-bottom: 30px;
+}
+
+.contInfoLR{
+  padding: 20px;
+  width: 50%;
+  max-width: 350px;
+}
+
+.infoBox{
+  text-align: center;
+}
+.infoBox p{
+  text-align: left;
+}
+.infoBox button{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  font-size: 13px;
+  border: none;
+}
+.infoBox button:hover{
+  background-color: grey;
+}
+
+.infoBox img{
+  height: 30px;
+  margin: 20px 0 20px 0;
+  display: inline-block;
+}
+
+/* /ContactUs*/
