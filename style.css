@@ -375,7 +375,7 @@ label.fcf-label {
 
 .fcf-btn-primary {
   color: black;
-  background-color: #faf1f0;
+  background-color: #B49D9D;
   border-color: #B49D9D;
 }
 
@@ -414,8 +414,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 /* /ContactScheme */
 
-/* /ContactUs */
 
+/* ContactUs */
 
 .iconBox{
   display: flex;
@@ -457,9 +457,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 .infoBox{
   text-align: center;
 }
+
 .infoBox p{
   text-align: left;
 }
+
 .infoBox button{
   text-align: center;
   background-color: black;
@@ -477,5 +479,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   margin: 20px 0 20px 0;
   display: inline-block;
 }
+
 
 /* /ContactUs*/
