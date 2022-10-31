@@ -28,7 +28,10 @@
     </nav>
   <main>
     <section>
-      <div class="aboutbox">
+      <div class="aboutbox">     
+        <div class="shoppingcartHeader">
+         your shopping cart
+        </div>  
         <div class="cartContainer">
           <div class="productImageCart">
             <img src="../images/necklace_3_whitepearls.png"  style="height: 25ch; width: 20ch;   border-radius: 3%;" />
@@ -40,7 +43,7 @@
           <div class="adjustProductContainer">
             <div class="itemsAmount">   
               <button class="plusminusBtn" id="minusBtn1" onclick="minusBtn1Function()">-</button>  
-              <span id="amount1"></span>       
+              <span id="amount1">2</span>       
               <button class="plusminusBtn" id="plusBtn1" onclick="plusBtn1Function()">+</button>
             </div>
             <div class=itemsAmount>
@@ -59,43 +62,44 @@
           <div class="adjustProductContainer">
             <div class="itemsAmount">   
               <button class="plusminusBtn" id="minusBtn2" onclick="minusBtn2Function()">-</button>
-              <span id="amount2"></span>
+              <span id="amount2">1</span>
               <button class="plusminusBtn" id="plusBtn2" onclick="plusBtn2Function()">+</button>
             </div>
 
             <div class=itemsAmount>
               <h5 class="nok">NOK</h5>
-              <p class="totalprice" >299</div>
+              <p class="totalprice" id="item2price">299</div>
             </div>
         </div>
-        <hr>
         <div class="checkout">
-        <div class="price">          
-          <p>Ordinærpris</p>
-          <div class="sum">
-            <h5>kr</h5>
-            <p id="totalPrice">0</p>
-          </div>
-
-        </div>
-        <div class="price">             
-          <p>Fraktkostnader</p>
-          <div class="sum">
-            <h5>kr</h5>
-            <p>59</p> 
-          </div>
-        </div>
-
-          <hr>
-          <div class="price">
-            <p>Totalt beløp</p>
+          <div class="price">          
+            <p>Ordinærpris</p>
             <div class="sum">
               <h5>kr</h5>
-              <p id="checkoutPrice">59</p> 
+              <p id="totalPrice">798</p>
             </div>
           </div>
-        </div>
+          <div class="price">             
+            <p>Fraktkostnader</p>
+            <div class="sum">
+              <h5>kr</h5>
+              <p>59</p> 
+            </div>
+          </div>
 
+          <hr>
+          <hr class="calculation">
+          <div class="price">
+              <p>Totalt beløp</p>
+              <div class="sum">
+                <h5>kr</h5>
+                <p id="checkoutPrice">857</p> 
+              </div>
+            </div>
+            <div class="checkoutBtnContainer">            
+              <button class="checkoutBtn" id="checkoutBtn" onclick="checkOut()"><p>checkout</p></button>
+            </div>
+        </div>
       </div>
     </section>
     
