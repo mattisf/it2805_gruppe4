@@ -66,8 +66,12 @@ body {
 
      
    }
-   a:hover{
+   a.headerlink:hover{
     font-size: 140%;
+  }
+
+  .aboutbar:hover{
+    font-size: 105%;
   }
 
   .aboutbar input[type=text] {
