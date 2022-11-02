@@ -1,14 +1,20 @@
 
+const items = JSON.parse(data)
+
 const shopBody = document.getElementById("shopBody");
 
-for (let i = 1; i < 5; i++) {
+console.log(items)
+for (const id in items) {
+    console.log(items[id])
+    let item = items[id]
     let shopItem = document.createElement('a')
-    shopItem.className = "categoryLink";
-    shopItem.href="#";
-    shopItem.innerHTML=
-        `<img src="../../images/necklace_1_flowers.png">
+    shopItem.id = item["name"]
+    shopItem.className = "categoryLink"
+    shopItem.href = "#";
+    shopItem.innerHTML = `
+        <img src="../../images/${item["image_src"]}">
         <div class="shopCategoryDisplay">
-            Charms
+            ${item["name"].replaceAll('_', ' ')}
         </div>`;
-    shopBody.prepend(shopItem);
+    shopBody.prepend(shopItem)
 }
