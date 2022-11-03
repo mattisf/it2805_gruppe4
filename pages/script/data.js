@@ -4,16 +4,23 @@
 const data = `
   {
     "1": {
-      "name": "White_Touch",
+      "name": "Necklace",
       "price": 499,
       "category": "necklace",
       "image_src": "white_touch.png"
     },
 
     "2": {
-      "name": "White_Touch",
-      "price": 499,
-      "category": "necklace",
+      "name": "Charm",
+      "price": 399,
+      "category": "charm",
+      "image_src": "white_touch.png"
+    },
+
+    "3": {
+      "name": "Ring",
+      "price": 299,
+      "category": "ring",
       "image_src": "white_touch.png"
     }
 

@@ -229,6 +229,25 @@ body {
 /* /ContactUs */
 
 /* Shop */
+#checkboxes {
+  position: relative;
+  width: 20%;
+  margin-top: 70px;
+}
+
+#checkboxes .checkboxContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#shopContainer {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+
+  background-color: #dccdcb;;
+}
 
 .shopCategories {
   position: relative;
@@ -236,7 +255,7 @@ body {
   margin-bottom: 100px;
   width: 80%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0%;
 
   text-align: justify;
   text-justify: distribute-all-lines;
@@ -262,6 +281,8 @@ body {
   zoom: 1;
 
   margin: 20px;
+
+  visibility: visible;
 }
 
 .categoryLink:hover {
