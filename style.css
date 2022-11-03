@@ -48,7 +48,7 @@ body {
    }
 
    .aboutbar {
-    width: 100px;
+    width: 115px;
     height: 90%;
     margin-bottom: 5%;
     background-color: #faf1f0;
@@ -68,10 +68,6 @@ body {
    }
    a.headerlink:hover{
     font-size: 140%;
-  }
-
-  .aboutbar:hover{
-    font-size: 105%;
   }
 
   .aboutbar input[type=text] {
