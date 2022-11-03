@@ -26,7 +26,6 @@ var itemPrice1 = 499, itemPrice2 = 299;
 
 
 const plusBtn1Function = () => {
-    plusBtn1.onclick = function(){
         number = amount1.firstChild.nodeValue;
         console.log(number)
         if(number < max){
@@ -35,12 +34,10 @@ const plusBtn1Function = () => {
             item1price.innerText = number*itemPrice1;
             updateUI();
 
-        }
     }
 
 }
 const minusBtn1Function = () => {
-    minusBtn1.onclick = function(){
         number = amount1.firstChild.nodeValue;
         console.log(number)
         if(number > min){
@@ -49,13 +46,12 @@ const minusBtn1Function = () => {
             item1price.innerText = number*itemPrice1;
             updateUI();
 
-        }
+    
     }
 }
 
 
 const plusBtn2Function = () => {
-    plusBtn2.onclick = function(){
         number = amount2.firstChild.nodeValue;
         console.log(number)
         if(number < max){
@@ -64,13 +60,11 @@ const plusBtn2Function = () => {
             item2price.innerText = number*itemPrice2;    
             updateUI();
     
-        }
     }
 
 
 }
 const minusBtn2Function = () => {
-minusBtn2.onclick = function(){
         number = amount2.firstChild.nodeValue;
         console.log(number)
         if(number > min){
@@ -79,7 +73,6 @@ minusBtn2.onclick = function(){
             item2price.innerText = number*itemPrice2;   
             updateUI();
      
-        }
         }
     }
 
@@ -93,8 +86,6 @@ const updateUI = () => {
 }
 
 const checkOut = ()=> {
-    checkoutBtn.onclick = () => {
-               alert("Thank you for your order");
+    alert("Thank you for your order");
 
-    }
 }
