@@ -31,6 +31,9 @@ for (const id in items) {
         <img src="../../images/${item["image_src"]}">
         <div class="shopCategoryDisplay">
             ${item["name"].replaceAll('_', ' ')}
+        </div>
+        <div class="priceTag">
+            ${item["price"]},-
         </div>`;
     itemArray.push(shopItem)
 }
@@ -49,30 +52,24 @@ function checkElements(category) {
     if (category=="necklace") {
         for (let i = 0; i < necklaces.length; i++) {
             if (necklaceCheckbox.checked) {
-                necklaces[i].style.visibility = 'visible';
                 necklaces[i].style.display = `inline-block`
             } else {
-                necklaces[i].style.visibility = `hidden`
                 necklaces[i].style.display = `none`
             }
         }
     } else if (category=="charm") {
         for (let i = 0; i < charms.length; i++) {
             if (charmCheckbox.checked) {
-                charms[i].style.visibility = `visible`
                 charms[i].style.display = `inline-block`
             } else {
-                charms[i].style.visibility = `hidden`
                 charms[i].style.display = `none`
             }
         }
     } else if (category=="ring") {
         for (let i = 0; i < rings.length; i++) {
             if (ringCheckbox.checked) {
-                rings[i].style.visibility = `visible`
                 rings[i].style.display = `inline-block`
             } else {
-                rings[i].style.visibility = `hidden`
                 rings[i].style.display = `none`
             }
         }
