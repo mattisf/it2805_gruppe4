@@ -21,12 +21,11 @@ ringCheckbox.addEventListener('click', ()=> {
 itemArray = []
 
 for (const id in items) {
-    console.log(items[id])
     let item = items[id]
     let shopItem = document.createElement('a')
     shopItem.id = item["name"]
     shopItem.className = `categoryLink ${item["category"]}`
-    shopItem.href = "#";
+    shopItem.href = `javascript:void(0)`;
     shopItem.innerHTML = `
         <img src="../../images/${item["image_src"]}">
         <div class="shopCategoryDisplay">
@@ -35,10 +34,37 @@ for (const id in items) {
         <div class="priceTag">
             ${item["price"]},-
         </div>`;
+    shopItem.addEventListener('click', () => {
+        shopPopup(shopItem)
+    })
     itemArray.push(shopItem)
 }
 
 console.log(itemArray)
+
+function shopPopup(item) {
+    let popup = document.createElement('div')
+    popup.className = `shopPopup`
+    popup.innerText = "text"
+    popup.style.width = "120%"
+    popup.style.height = "60%"
+    popup.style.left = "-10%"
+    popup.style.top = "20%"
+    popup.id = item.id + "Popup"
+
+
+
+    popup.addEventListener('mouseout', () => {
+      setTimeout(() => {
+        if (popup.matches(':not(:hover)')) {
+            popup.parentNode.removeChild(popup)
+        }
+      }, 1500)
+    })
+    if (!(item.children[item.children.length-1].id == popup.id)) {
+        item.append(popup)
+    }
+}
 
 for (let i = 0; i < itemArray.length; i++) {
     shopBody.prepend(itemArray[i])

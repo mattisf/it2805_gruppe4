@@ -629,6 +629,21 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   line-height: 9;
 }
 
+.shopPopup {
+  position: absolute;
+  background-color: white;
+}
+
+.cancel {
+  width: 100vw;
+  height: 200%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 
 /* /Shop */
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
