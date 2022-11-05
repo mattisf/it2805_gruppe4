@@ -34,8 +34,12 @@ for (const id in items) {
         <div class="priceTag">
             ${item["price"]},-
         </div>`;
-    shopItem.addEventListener('click', () => {
-        shopPopup(shopItem)
+    shopItem.addEventListener('mouseover', () => {
+        setTimeout(() => {
+            if (shopItem.matches(':hover')) {
+                shopPopup(shopItem)
+            }
+        }, 500)
     })
     itemArray.push(shopItem)
 }
@@ -46,20 +50,14 @@ function shopPopup(item) {
     let popup = document.createElement('div')
     popup.className = `shopPopup`
     popup.innerText = "text"
-    popup.style.width = "120%"
-    popup.style.height = "60%"
-    popup.style.left = "-10%"
-    popup.style.top = "20%"
     popup.id = item.id + "Popup"
-
-
 
     popup.addEventListener('mouseout', () => {
       setTimeout(() => {
         if (popup.matches(':not(:hover)')) {
             popup.parentNode.removeChild(popup)
         }
-      }, 1500)
+      }, 500)
     })
     if (!(item.children[item.children.length-1].id == popup.id)) {
         item.append(popup)
