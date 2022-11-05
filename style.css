@@ -5,38 +5,38 @@ body {
     background-color:#faf1f0;
     font-family: Georgia, serif;;
     }
-   
+
    figure {
     text-align: center;
     margin: 0 auto; /*centers body*/
     margin-top: 10px;
     margin-bottom:10px;
    }
-   
+
    section {
    padding-left: 40px;
    padding-right: 40px;
    margin-bottom:20px;
    }
-   
+
    h1, h2, h3 {
      font-family: Georgia, serif;
-     
+
    }
    p {
     text-decoration: none;
     color: grey;
     font-size: 1rem;
-    transition: all 500ms;  
+    transition: all 500ms;
    }
-  
+
    .abouth1 {
     font-weight: lighter;
     text-align: center;
     display:block;
     margin-right: 10%;
    }
-   
+
    .aboutbox {
      width: 100%;
      min-height: 40ch;
@@ -55,7 +55,7 @@ body {
     display: inline-block;
     position:absolute;
     line-height: 2.2;
-    
+
    }
 
    .aboutbar a {
@@ -64,7 +64,7 @@ body {
      margin-top: 10%;
      margin-left: 5%;
 
-     
+
    }
    a.headerlink:hover{
     font-size: 140%;
@@ -97,21 +97,21 @@ body {
     line-height: 1.7;
    }
 
-   
+
    ul {
      padding-left: 18px;
    }
-  
+
   /* It only applies to the list items that are the pages */
   section>ol>li {
       margin-bottom: 15px;
   }
   section>ul>li {
-    list-style-type:circle;  
+    list-style-type:circle;
 }
-  
+
   .title{
-      display: block;  
+      display: block;
       margin-bottom: 10px;
   }
   .header{
@@ -146,12 +146,12 @@ body {
     text-decoration: none;
     color: grey;
     font-size: 1.3rem;
-    transition: all 500ms;  
+    transition: all 500ms;
   }
   .logo{
     max-width: 400px;
   }
-   
+
    footer {
     width: 130%;
     background-color: #B49D9D;
@@ -197,7 +197,7 @@ div.shoppingcartHeader{
   width: 30ch;
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 
  }
@@ -530,6 +530,107 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+/* /ContactUs */
+
+/* Shop */
+#checkboxes {
+  position: relative;
+  width: 20%;
+  margin-top: 70px;
+}
+
+#checkboxes .checkboxContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#shopContainer {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+
+.shopCategories {
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 0%;
+
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.categoryLink {
+  position: relative;
+  color: #9e6a64;;
+  text-decoration: none;
+  width: 190px;
+  height: 255px;
+
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+
+  margin: 20px;
+
+  visibility: visible;
+}
+
+.categoryLink:hover {
+  font-size: initial;
+}
+
+.categoryLink img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shopCategoryDisplay {
+  position: absolute;
+  background-color: rgba(222, 196, 196, 0.8);
+  width: 100%;
+  height: 40%;
+  top: 60%;
+
+  text-align: center;
+  line-height: 4;
+}
+
+.priceTag {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 40%;
+  top: 60%;
+
+  text-align: center;
+  line-height: 9;
+}
+
+
+/* /Shop */
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {

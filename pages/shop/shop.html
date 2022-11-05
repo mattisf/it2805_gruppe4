@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8">  
+  <meta charset="utf-8">
   <title>P1 Project Requirements</title>
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <script src="../script/data.js"></script>
+  <script src="../script/shop.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 </head>
 
 <html lang="no">
-
   <body class="vsc-initialized">
     <nav class="header">
-        <div class="left-header">        
+        <div class="left-header">
             <a class="headerlink" href="../homePage.html">home</a>
             <a class="headerlink" href="shop.html">shop </a>
             <a class="headerlink" href="../about/ourHistory.html">about</a>
@@ -31,21 +31,39 @@
         </div>
     </nav>
   <main>
-    <section>
-    
-      
-    </section>
-    
+      <div id="shopContainer">
+        <div id="checkboxes">
+          <div class="checkboxContainer">
+            <input type="checkbox" id="necklaceCheckbox" checked>
+            <label for="necklaceCheckbox">Necklaces</label>
+          </div>
+          <div class="checkboxContainer">
+            <input type="checkbox" id="charmCheckbox" checked>
+            <label for="charmCheckbox">Charms</label>
+          </div>
+          <div class="checkboxContainer">
+            <input type="checkbox" id="ringCheckbox" checked>
+            <label for="ringCheckbox">Rings</label>
+          </div>
+        </div>
+
+        <div id="shopBody" class="shopCategories">
+
+            <span class="stretch"></span>
+        </div>
+      </div>
+
+
   </main>
-    
+
   <footer>
-    <img class="footerpic" src="/images/drawgirls.png">
+    <img class="footerpic" src="../../images/drawgirls.png">
   </footer>
 
-      
-  
 
-  
+
+
+
 </body>
 
 </html>
