@@ -3,6 +3,10 @@ const items = JSON.parse(data)
 
 const shopBody = document.getElementById("shopBody");
 
+var shoppingCartCounter = 0;
+const counterContainer = `<div id="shoppingCounter">0</div>`
+document.getElementsByClassName("material-icon").innerHTML = counterContainer;
+
 const necklaceCheckbox = document.getElementById("necklaceCheckbox")
 necklaceCheckbox.addEventListener('click', () =>{
     checkElements("necklace")
@@ -49,17 +53,21 @@ console.log(itemArray)
 function shopPopup(item) {
     let popup = document.createElement('div')
     popup.className = `shopPopup`
-    popup.innerText = "text"
+    popup.innerHTML = `<button>Add to Cart</button>`
+    popup.getElementsByTagName("button")[0].addEventListener('click', () => {
+        shoppingCartCounter += 1;
+        document.getElementById("shoppingCounter").innerText = shoppingCartCounter;
+    });
     popup.id = item.id + "Popup"
 
-    popup.addEventListener('mouseout', () => {
+    item.addEventListener('mouseout', () => {
       setTimeout(() => {
         if (popup.matches(':not(:hover)')) {
             popup.parentNode.removeChild(popup)
         }
       }, 500)
     })
-    if (!(item.children[item.children.length-1].id == popup.id)) {
+    if (item.children[item.children.length-1].id != popup.id) {
         item.append(popup)
     }
 }

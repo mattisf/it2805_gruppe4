@@ -32,7 +32,7 @@ const data = `
     },
 
     "5": {
-      "name": "Necklace 2",
+      "name": "Necklace 3",
       "price": 499,
       "category": "necklace",
       "image_src": "necklace_1_flowers.png"
