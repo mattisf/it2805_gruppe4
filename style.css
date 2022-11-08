@@ -673,3 +673,44 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     max-width: 100%;
   }
 }
+
+/* HomePageInfoBox */
+
+.storyBox{
+  border: #d1b7b7 10px solid;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #a28989;
+  text-align: center;
+  
+}
+
+.HPHeader{
+  margin-top: 20px;
+  font-weight: lighter;
+  text-align: center;
+  display:block;
+  color: white;
+  font-size: xx-large;
+}
+
+.HPText{
+  font-weight: lighter;
+  text-align: center;
+  display:block;
+}
+
+.HPBtn{
+  display: inline-block;
+  font-weight: 400px;
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  border-color: #d1b7b7;
+  background-color: #e6c7c7;
+  font-size: large;
+}
+
+
+
+/* /HomePageInfoBox */
