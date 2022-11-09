@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html lang="no">
 <head>
   <meta charset="utf-8">  
   <title>Contact Scheme</title>
@@ -9,7 +9,7 @@
 
 </head>
 
-<html lang="no">
+
 
   <body class="vsc-initialized">
     <nav class="header">
@@ -24,11 +24,8 @@
         </div>
         <div class="right-header">
             <a class="headerlink" href="#">search</a>
-            <a class="icon-logo" href="../shoppingCart.html">            <i class="material-icons" >shopping_cart</i></a>
-
-
-
-
+            <a class="icon-logo" href="../shoppingCart.html">            
+                <i class="material-icons" >shopping_cart</i></a>
         </div>
     </nav>
   <main>
@@ -40,6 +37,7 @@
 <div class="fcf-body">
 
     <div id="fcf-form">
+        <form onsubmit="return false"></form>
 
     <form id="fcf-form-id" class="fcf-form-class" method="post" action="#">
         
@@ -65,8 +63,9 @@
         </div>
 
         <div class="fcf-form-group">
-            <button onclick="sendMessage()" type="button" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" >Send Message</button>
+            <button onclick="sendMessage();" type="button" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" >Send Message</button>
         </div>
+    </form>
 
     </div>
     </div>
