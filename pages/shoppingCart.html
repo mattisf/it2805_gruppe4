@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8">  
-  <title>Frøken Oslo</title>  
-  <script src="shoppingCart.js" defer></script>
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <meta charset="utf-8">
+  <title>Frøken Oslo</title>
+  <script src="script/shoppingCart.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="../style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
@@ -12,7 +12,7 @@
 <html lang="no">
   <body class="vsc-initialized">
     <nav class="header">
-        <div class="left-header">        
+        <div class="left-header">
             <a class="headerlink" href="homePage.html">home</a>
             <a class="headerlink" href="shop/shop.html">shop </a>
             <a class="headerlink" href="about/ourHistory.html">about</a>
@@ -22,16 +22,16 @@
         </div>
         <div class="right-header">
             <a class="headerlink" href="#">search</a>
-            <a class="icon-logo" href="shoppingCart.html">           
+            <a class="icon-logo" href="shoppingCart.html">
                <i class="material-icons" >shopping_cart</i></a>
         </div>
     </nav>
   <main>
     <section>
-      <div class="aboutbox">     
+      <div class="aboutbox">
         <div class="shoppingcartHeader">
          your shopping cart
-        </div>  
+        </div>
         <div class="cartContainer">
           <div class="productImageCart">
             <img src="../images/necklace_3_whitepearls.png"  style="height: 25ch; width: 20ch;   border-radius: 3%;" />
@@ -41,9 +41,9 @@
               <p class=”productSubtitle”>Necklace of white Pearls and crystals</p>
           </div>
           <div class="adjustProductContainer">
-            <div class="itemsAmount">   
-              <button class="plusminusBtn" id="minusBtn1" onclick="minusBtn1Function()">-</button>  
-              <span id="amount1">1</span>       
+            <div class="itemsAmount">
+              <button class="plusminusBtn" id="minusBtn1" onclick="minusBtn1Function()">-</button>
+              <span id="amount1">1</span>
               <button class="plusminusBtn" id="plusBtn1" onclick="plusBtn1Function()">+</button>
             </div>
             <div class=itemsAmount>
@@ -60,7 +60,7 @@
               <p class=”productSubtitle”>Necklace of colourful pearls, inspired by spring</p>
           </div>
           <div class="adjustProductContainer">
-            <div class="itemsAmount">   
+            <div class="itemsAmount">
               <button class="plusminusBtn" id="minusBtn2" onclick="minusBtn2Function()">-</button>
               <span id="amount2">1</span>
               <button class="plusminusBtn" id="plusBtn2" onclick="plusBtn2Function()">+</button>
@@ -72,18 +72,18 @@
             </div>
         </div>
         <div class="checkout">
-          <div class="price">          
+          <div class="price">
             <p>Ordinærpris</p>
             <div class="sum">
               <h5>kr</h5>
               <p id="totalPrice">798</p>
             </div>
           </div>
-          <div class="price">             
+          <div class="price">
             <p>Fraktkostnader</p>
             <div class="sum">
               <h5>kr</h5>
-              <p>59</p> 
+              <p>59</p>
             </div>
           </div>
 
@@ -93,26 +93,26 @@
               <p>Totalt beløp</p>
               <div class="sum">
                 <h5>kr</h5>
-                <p id="checkoutPrice">857</p> 
+                <p id="checkoutPrice">857</p>
               </div>
             </div>
-            <div class="checkoutBtnContainer">            
+            <div class="checkoutBtnContainer">
               <button class="checkoutBtn" id="checkoutBtn" onclick="checkOut()"><p>checkout</p></button>
             </div>
         </div>
       </div>
     </section>
-    
+
   </main>
-    
+
   <footer>
-    <img class="footerpic" src="/images/drawgirls.png">
+    <img class="footerpic" src="../images/drawgirls.png">
   </footer>
 
-      
-  
 
-  
+
+
+
 </body>
 
 </html>
