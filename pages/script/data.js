@@ -4,7 +4,7 @@
 const data = `
   {
     "1": {
-      "name": "Necklace",
+      "name": "Flower Necklace",
       "price": 499,
       "category": "necklace",
       "image_src": "necklace_1_flowers.png"
@@ -14,28 +14,28 @@ const data = `
       "name": "Charm",
       "price": 399,
       "category": "charm",
-      "image_src": "necklace_2_flowers.png"
+      "image_src": "necklace_1_flowers.png"
     },
 
     "3": {
       "name": "Ring",
       "price": 299,
       "category": "ring",
-      "image_src": "necklace_3_flowers.png"
+      "image_src": "necklace_1_flowers.png"
     },
 
     "4": {
-      "name": "Necklace 2",
+      "name": "White Touch",
       "price": 499,
       "category": "necklace",
-      "image_src": "necklace_1_flowers.png"
+      "image_src": "necklace_3_whitepearls.png"
     },
 
     "5": {
-      "name": "Necklace 3",
-      "price": 499,
+      "name": "Spring Feeling",
+      "price": 299,
       "category": "necklace",
-      "image_src": "necklace_1_flowers.png"
+      "image_src": "necklace_4_colours.png"
     }
 
   }
