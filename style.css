@@ -156,13 +156,12 @@ body {
     width: 130%;
     background-color: #B49D9D;
     position: relative;
-    margin: 0% 0% 2% -15%;
+    margin: 0% 0% 0% -15%;
     text-align: center;
    }
 
    .footerpic {
     width: 150px;
-
    }
 
 /* ContactUs */
@@ -270,8 +269,6 @@ button.checkoutBtn{
   margin: 20px 0 20px 0;
   display: inline-block;
 }
-
-
 
 
 /* ContactScheme */
