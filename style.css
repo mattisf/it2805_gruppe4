@@ -1,6 +1,6 @@
 body {
-    width: 80%;
-    height: 90%;
+    width: 80vw;
+    min-height:100vh;
     margin: 0 auto; /*centers body*/
     background-color:#faf1f0;
     font-family: Georgia, serif;;
@@ -153,15 +153,17 @@ body {
   }
 
    footer {
-    width: 130%;
     background-color: #B49D9D;
-    position: relative;
-    margin: 0% 0% 0% -15%;
+    position: fixed;
+    bottom: 0;
+    width: 120vw;
+    margin: 0% 0% 0% -20%;
     text-align: center;
+    
    }
 
    .footerpic {
-    width: 150px;
+    width: 100px;
    }
 
 /* ContactUs */
