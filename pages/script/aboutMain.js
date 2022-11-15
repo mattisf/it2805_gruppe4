@@ -5,9 +5,9 @@ body = document.getElementsByTagName("body")[0]
 
 navbar.innerHTML = `
 <div class="left-header">
-    <a class="headerlink" href="homePage.html">home</a>
-    <a class="headerlink" href="shop/shop.html">shop </a>
-    <a class="headerlink" href="about/ourHistory.html">about</a>
+    <a class="headerlink" href="../homePage.html">home</a>
+    <a class="headerlink" href="../shop/shop.html">shop </a>
+    <a class="headerlink" href="ourHistory.html">about</a>
 </div>
 <div class="center-header">
     <img  src="../images/logo_1.png" onerror="this.src='../../images/logo_1.png'" alt="logo" class="logo">
