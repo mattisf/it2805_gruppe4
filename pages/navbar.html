@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Frøken Oslo</title>
 </head>
@@ -17,23 +17,17 @@
         </div>
         <div class="center-header">
             <img  src="../images/logo_1.png" alt="logo" class="logo">
-
         </div>
         <div class="right-header">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">search</button>
+            <div class="dropdown" id="dropdown">
+                <input type="text" placeholder="Search..." id="searchField" class="dropbtn" onkeyup="filterFunction()">
                 <div id="myDropdown" class="dropdown-content">
-                  <input type="text" placeholder="search..." id="myInput" onkeyup="filterFunction()">
                   <a href="about/ourHistory.html">History</a>
                   <a href="homePage.html">Homepage</a>
                   <a href="about/contactUs.html">Contact us</a>
                   <a href="about/production.html">Product info</a>
                   <a href="shop/charms.html">Charms</a>
-                  <a href="shop/necklaces.html">Necklaces</a>
                   <a href="shop/shop.html">Shop</a>
-                  <a href="shop/rings.html">Rings</a>
-                  <a href="shop/charms.html">Charms</a>
-                  <a href="shop/product.html">Product</a>
                 </div>
               </div>
             <a class="icon-logo" href="shoppingCart.html">            <i class="material-icons" >shopping_cart</i></a>

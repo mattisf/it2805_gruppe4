@@ -35,7 +35,7 @@ body {
     text-align: center;
     display:block;
     margin-right: 10%;
-    
+
    }
 
    .aboutbox {
@@ -135,6 +135,7 @@ body {
 
   }
   .right-header{
+    position: relative;
     width: 22%;
     height: 50px;
     height: 50px;
@@ -142,12 +143,17 @@ body {
     justify-content: space-around;
 
   }
-  .headerlink, .dropdown{
+  .headerlink, #dropdown{
     text-decoration: none;
     color: grey;
     font-size: 1.3rem;
     transition: all 500ms;
   }
+
+  #searchField  {
+    position: relative;
+  }
+
   .logo{
     max-width: 400px;
   }
@@ -159,7 +165,7 @@ body {
     width: 120vw;
     margin: 0% 0% 0% -20%;
     text-align: center;
-    
+
    }
 
    .footerpic {
@@ -699,15 +705,18 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 /* The search field when it gets focus/clicked on */
 #myInput:focus {outline: 3px solid #ddd;}
 
+#myDropdown {
+  display: none;
+}
+
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+#dropdown {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
   position: absolute;
   font-size: 1rem;
   background-color: #f6f6f6;
@@ -738,7 +747,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   padding: 10px;
   background-color: #a28989;
   text-align: center;
-  
+
 }
 
 .HPHeader{

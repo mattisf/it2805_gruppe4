@@ -1,10 +1,28 @@
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-  
+
+const dropDown = document.getElementById("myDropdown");
+dropDown.style.display = 'none'
+
+const searchBar = document.getElementById("searchField");
+searchBar.addEventListener('click', (e) => {
+  if (searchBar.contains(e.target)) {
+    if (dropDown.style.display == 'none') {
+      dropDown.style.display = 'block';
+    }
+  }
+});
+
+window.addEventListener('click', (e) => {
+  if (!(searchBar.contains(e.target))) {
+    dropDown.style.display = 'none';
+  }
+})
+
   function filterFunction() {
     var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
+    input = searchBar;
     filter = input.value.toUpperCase();
     div = document.getElementById("myDropdown");
     a = div.getElementsByTagName("a");
@@ -17,3 +35,5 @@ function myFunction() {
       }
     }
   }
+
+
