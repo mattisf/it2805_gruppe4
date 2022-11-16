@@ -14,7 +14,7 @@ const data = `
       "name": "Charm",
       "price": 399,
       "category": "charm",
-      "image_src": "necklace_1_flowers.png"
+      "image_src": "necklace_3_whitepearls.png"
     },
 
     "3": {
@@ -36,7 +36,27 @@ const data = `
       "price": 299,
       "category": "necklace",
       "image_src": "necklace_4_colours.png"
-    }
+    },
 
+    "6": {
+      "name": "Spring Ring",
+      "price": 349,
+      "category": "ring",
+      "image_src": "necklace_1_flowers.png"
+    },
+
+    "7": {
+      "name": "Spring Feeling",
+      "price": 299,
+      "category": "necklace",
+      "image_src": "necklace_4_colours.png"
+    },
+
+    "8": {
+      "name": "Flower Necklace",
+      "price": 499,
+      "category": "necklace",
+      "image_src": "necklace_3_whitepearls.png"
+    }
   }
 `
