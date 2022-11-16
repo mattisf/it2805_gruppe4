@@ -23,7 +23,10 @@ navbar.innerHTML = `
           <a href="shop.html">Shop</a>
         </div>
       </div>
-    <a class="icon-logo" href="shoppingCart.html">            <i class="material-icons" >shopping_cart</i></a>
+    <a class="icon-logo" href="../shoppingCart.html">
+      <div id="shoppingCounter"></div>
+      <i class="material-icons" >shopping_cart</i>
+    </a>
 </div>
 `;
 
