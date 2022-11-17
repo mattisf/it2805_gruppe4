@@ -262,6 +262,11 @@ button.checkoutBtn{
   height: 8ch;
   background-color: white;
 }
+
+.checkoutBtn:hover {
+  cursor: pointer;
+}
+
 .checkoutBtnContainer{
   width: 100ch;
   height: 6ch;
