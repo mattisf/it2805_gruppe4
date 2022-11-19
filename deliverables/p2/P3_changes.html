@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>P3 Design Changes</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+  <body class="vsc-initialized">
+    <header>
+  		<h1>P3 Design Changes</h1>
+    </header>
+  <main>
+    <section>
+    <h2>Document Details</h2>
+    <p>P3 Changes</p>
+    Caroline, Emilia, Mattias, Solveig & Ylva
+    <p>IT2805 18.11.22</p>
+    </section>
+
+    <section>
+
+    <h2>Administrative Details </h2>
+    <p>    Client Name: Frøken Oslo </p>
+    <p>    Website Name: FrokenOslo </p>
+    <p>    Contact person: Sigrid A. Hole </p>
+    <p>    Link to website: <a href="www.vg.no">click here</a></p>
+    </section>
+
+    <section>
+    <h2>Design Changes</h2>
+    <p>The page layout and appearance are followed as planned and used as a template for the pages. In addition, a footer is designed and implemented on every pages.
+        The initially 10 planned pages have used the mockups as a suggestion of model of how it will look like and operate. Mostly all of them have the same fuctionality, but some paged has a new layout. In addition, new pages and functionalities has been developed and implemented.
+        Concrete what changes, both functionals, visuals and the new pages themself, are presented and described below.
+    </p>
+    <div class="pageChanges">
+        <h5>homePage.html</h5>
+        <p>Homepage has a totally new layout. The navbar is the same as the rest of the sites, to improve the usability and smooth trantition when navigating to another page.
+            The landingpage is implemented with inspiration pictures and quotes. This was decided in collaboration with the client.</p>
+    </div>
+    <div class="pageChanges">
+        <h5>shop.html</h5>
+        <p>There are some changes to the layout of the shop page, though the main idea is still similar to the one in the mockup. The shop items are displayed as cards, but now with
+            a slightly transparent overlay with information about product name and the price. There is no option to sort the items, but the checkboxes on the left side of the page
+            allows the user to filter by product categories so they only see what's relevant to them. Instead of a 'see more' button, we have added an 'Add to Cart' button that pop
+            ups when the user hovers over a shop item. When clicking 'Add to Cart', a counter next to the shopping cart icon in the navbar is incremented, indicating how many items
+            the customer has added. Note that this functionality is entirely separate from shopping cart page itself.</p>
+    </div>
+    <div class="pageChanges">
+        <h5>product.html, rings.html, charms.html and necklaces.html</h5>
+        <p>Has been removed, since the products is implemented as a .js file as a replacement of a .json file. Product information is stored in 'data.js', which contains a single
+            string that is then parsed as a json object in 'shop.js'.
+        </p>
+    </div>
+    <div class="pageChanges">
+        <h5>ourHistory.html</h5>
+        <p>The only change is the text color of the title "our history". The original color was light pink (#FCF6FC), like the background.
+            The new color is black to improve the usability. </p>
+    </div>
+    <div class="pageChanges">
+        <h5>production.html</h5>
+        <p>The only change is the text color of the title "product information". The original color was light pink (#FCF6FC), like the background.
+            The new color is black to improve the usability. </p>
+    </div>
+    <div class="pageChanges">
+        <h5>contactUs.html</h5>
+        <p>The first change is the text color of the title "contact us". The original color was light pink (#FCF6FC), like the background.
+            The new color is black to improve the usability. In addition, the Twitter text below is excluded, when this is not an important platform for the client.  </p>
+    </div>
+    <div class="pageChanges">
+        <h5>contactScheme.html</h5>
+        <p>This page is added to the content. The page has a contact scheme where the user can write a message and its information to get in touch with the client.
+            The page is the result from a request from the client, where they wanted to facilitate for and ease communication from customers. </p>
+    </div>
+    <div class="pageChanges">
+        <h5>shoppingCart.html</h5>
+        <p>Shopping cart has a new layout, but the same functionalities.
+            Each item is now represented on a card, including the name and information about the product, the order amount of the item and buttons to change it. The product image is styled to be: height: 25ch and width: 20ch.
+            The page has a responsive price, both for each product, ordinary price and total price, including freight cost. The functionalites where the user can add a promo code, and get information about the shipping methods are also excluded.
+            The checkout button is implemented with an alert instead of transferring the user to an external site. The alert, "Thank you for your order", gives a feedback on the order.</p>
+    </div>
+    </section>
+
+    <section>
+
+    <h2>Updated Organizational Scheme</h2>
+    Architecture of the code is presented:
+    <ul>
+        <li>images/</li>
+            <ul>
+                <li>drawgirls.png</li>
+                <li>logo_1.png</li>
+                ...
+            </ul>
+        <li>pages/</li>
+            <ul>
+                <li>about/</li>
+                    <ul>
+                        <li>contactScheme.html</li>
+                        <li>contactUs.html</li>
+                        <li>ourHistory.html</li>
+                        <li>production.html</li>
+                    </ul>
+                <li>shop/</li>
+                    <ul>
+                        <li>shop.html</li>
+                    </ul>
+                <li>homePage.html</li>
+                <li>shoppingCart.html</li>
+            </ul>
+        <li>script/</li>
+            <ul>
+                <li>contactScheme.js</li>
+                <li>data.js</li>
+                <li>main.js</li>
+                <li>aboutMain.js</li>
+                <li>shopMain.js</li>
+                <li>shop.js</li>
+                <li>search.js</li>
+                <li>shoppingCart.js</li>
+            </ul>
+        <li>style/</li>
+            <ul>
+                <li>style.css</li>
+            </ul>
+    </ul>
+    <h3>Final Work Division</h3>
+    The following table outlines the work division.
+    <table>
+        <tr>
+            <td>
+            <b>Filename / work task </b>
+            </td>
+            <td>
+            <b>Description</b>
+            </td>
+            <td>
+            <b>Assigned</b>
+            </td>
+        </tr>
+        <tr>
+            <td>navbar.html</td>
+            <td>Develop and implement navbar.</td>
+            <td>Ylva</td>
+        </tr>
+        <tr>
+            <td>homePage.html</td>
+            <td>Homepage, the landing page for the website.</td>
+            <td>Solveig</td>
+        </tr>
+        <tr>
+            <td>shop.html</td>
+            <td>Main shop page.</td>
+            <td>Mattias</td>
+        </tr>
+        <tr>
+            <td>about.html</td>
+            <td>Information about the website and the client.</td>
+            <td>Ylva</td>
+        </tr>
+        <tr>
+            <td>ourHistory.html</td>
+            <td>Some information about the brand and why and how it was made.</td>
+            <td>Emilia</td>
+        </tr>
+        <tr>
+            <td>production.html</td>
+            <td>Information about the products</td>
+            <td>Ylva</td>
+        </tr>
+        <tr>
+            <td>contactUs.html</td>
+            <td>How to contact the brands employees.</td>
+            <td>Solveig</td>
+        </tr>
+        <tr>
+            <td>contactScheme.html</td>
+            <td>How to contact the brands employees.</td>
+            <td>Solveig</td>
+        </tr>
+        <tr>
+            <td>shoppingCart.html</td>
+            <td>Lets the user view their shopping cart.</td>
+            <td>Caroline</td>
+        </tr>
+        <tr>
+            <td>shoppingCart.js</td>
+            <td>Handles shopping cart logic.</td>
+            <td>Caroline</td>
+        </tr>
+        <tr>
+            <td>search.js</td>
+            <td>Script for rolldown menu.</td>
+            <td>Emilia</td>
+        </tr>
+        <tr>
+            <td>shop.js</td>
+            <td>Logic for the shop page.</td>
+            <td>Mattias</td>
+        </tr>
+        <tr>
+            <td>data.js</td>
+            <td>Storing json data for shop items.</td>
+            <td>Mattias</td>
+        </tr>
+        <tr>
+            <td>contactScheme.js</td>
+            <td>Displaying and sorting products.</td>
+            <td>Solveig</td>
+        </tr>
+        <tr>
+            <td>main.js</td>
+            <td>Loading of navbar</td>
+            <td>Mattias</td>
+        </tr>
+        <tr>
+            <td>aboutMain.js</td>
+            <td>Loading of navbar for about pages. Needed because of internal page structure.</td>
+            <td>Mattias</td>
+        </tr>
+        <tr>
+            <td>shopMain.js</td>
+            <td>Loading of navbar for about pages. Needed because of internal page structure.</td>
+            <td>Mattias</td>
+        </tr>
+        <tr>
+            <td>style.css</td>
+            <td>CSS style for the website.</td>
+            <td>All</td>
+        </tr>
+        <tr>
+            <td>images</td>
+            <td>Upload and implement images</td>
+            <td>All</td>
+        </tr>
+        <tr>
+            <td>navigation</td>
+            <td>Implement navigation between files</td>
+            <td>All</td>
+        </tr>
+        <tr>
+            <td>Testing</td>
+            <td>Implement and test continuously</td>
+            <td>All</td>
+        </tr>
+        <tr>
+            <td>Final controls</td>
+            <td>Session together with all team members to test the functionalities and usability of the website. </td>
+            <td>All</td>
+        </tr>
+    </table>
+
+
+    </section>
+
+  </main>
+
+    <footer>
+  <p> Caroline, Emilia, Mattias, Solveig & Ylva </p>
+  </footer>
+
+</body>
+
+</html>
