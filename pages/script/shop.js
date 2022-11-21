@@ -31,7 +31,7 @@ for (const id in items) {
     shopItem.className = `categoryLink ${item["category"]}`
     shopItem.href = `javascript:void(0)`;
     shopItem.innerHTML = `
-        <img src="../../images/${item["image_src"]}">
+        <img alt="${item["name"]}" src="../../images/${item["image_src"]}">
         <div class="shopCategoryDisplay">
             ${item["name"].replaceAll('_', ' ')}
         </div>
